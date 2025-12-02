@@ -1,5 +1,4 @@
 // Calculate distance between two coordinates (lat/lng in degrees) using Haversine formula
-// Returns distance in kilometers
 function haversineDistanceKm(lat1, lon1, lat2, lon2) {
   const R = 6371; // Earth radius in km
 
