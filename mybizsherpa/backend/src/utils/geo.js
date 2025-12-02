@@ -1,6 +1,6 @@
 
 function haversineDistanceKm(lat1, lon1, lat2, lon2) {
-  const R = 6371; // Earth radius in km
+  const R = 6371; 
 
   const toRad = (deg) => (deg * Math.PI) / 180;
 
