@@ -2,7 +2,6 @@ const User = require("../models/User");
 const { haversineDistanceKm } = require("../utils/geo");
 
 // POST /api/users/register
-// Body: { name, email, password, info?, latitude, longitude, radiusKm? }
 async function registerUser(req, res, next) {
   try {
     const { name, email, password, info, latitude, longitude, radiusKm } = req.body || {};
