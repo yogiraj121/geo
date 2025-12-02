@@ -6,7 +6,6 @@ async function registerUser(req, res, next) {
   try {
     const { name, email, password, info, latitude, longitude, radiusKm } = req.body || {};
 
-    // 🧩 Validate Required Fields
     if (!name || !email || !password || latitude == null || longitude == null)
       return res.status(400).json({ message: "Missing required fields: name, email, password, latitude, longitude." });
 
